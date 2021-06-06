@@ -1,5 +1,5 @@
 # Lab 10
 
-#  Link to canny.io page
+#  Part 1 - Roadmap & Feature request: link to canny.io page
 
-https://cse110-lab10-aslothmachine.canny.io/feature-requests
+https://cse110-lab10-aslothmachine.canny.io/
