@@ -53,17 +53,18 @@
       var client = factory.client();
 
       client.on(client.Event.SDK_READY, function() {
-        var treatment = client.getTreatment('double_column');
+        var treatment = client.getTreatment('dark_mode');
 
         if (treatment === 'on') {
           // Insert code for on treatment
-          document.querySelector('main').className = "double-column";
+          document.body.style.background = "#000000"; // Dark mode body
         } else if (treatment === 'off') {
           // Insert code for off treatment
-          document.querySelector('main').className = "single-column";
+          document.body.style.background = "##EFECCA";  // Original light mode body
+      
         } else {
           // Insert code for control treatment
-          document.querySelector('main').className = "single-column"; // ????
+          document.body.style.background = "#ccc"; // gray body
         }
 
         client.destroy().then(function() {
